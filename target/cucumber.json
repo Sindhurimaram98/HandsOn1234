@@ -1,81 +1,214 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
-        "line": 12,
-        "name": "login to demo webshop",
+        "line": 16,
+        "name": "Successfull login with valid credentials",
         "description": "",
-        "id": "login-to-demowebshop;login-to-demo-webshop;;2",
+        "id": "login-action;successfull-login-with-valid-credentials;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 13192162100,
+              "duration": 10451426700,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I launch the demo web shop page",
+            "line": 10,
+            "name": "Navigate to home page",
             "match": {
-              "location": "loginstepdefs.i_launch_the_demo_web_shop_page()"
+              "location": "TestMeApp.navigate_to_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 461013500,
+              "duration": 289600,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I provide valid \"karthik456@gmail.com\" and \"karthik456\"",
+            "line": 11,
+            "name": "user enters \"karthik456@gmail.com\" and \"karthik456\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"karthik456@gmail.com\"",
-                  "offset": 16
+                  "offset": 12
                 },
                 {
                   "val": "\"karthik456\"",
-                  "offset": 43
+                  "offset": 39
                 }
               ],
-              "location": "loginstepdefs.i_provide_valid_and(String,String)"
+              "location": "TestMeApp.user_enters_and(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7035818800,
+              "duration": 49700,
               "status": "passed"
             },
-            "line": 7,
-            "name": "click on login button",
+            "line": 12,
+            "name": "Message Login successfully",
             "match": {
-              "location": "loginstepdefs.click_on_login_button()"
+              "location": "TestMeApp.message_Login_successfully()"
             },
-            "keyword": "And "
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Successfull login with valid credentials",
+        "description": "",
+        "id": "login-action;successfull-login-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12100767200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Navigate to home page",
+            "match": {
+              "location": "TestMeApp.navigate_to_home_page()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 41237500,
+              "duration": 107000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I shall be able to login successfully",
+            "line": 11,
+            "name": "user enters \"shahrukh@khan.com\" and \"omshanti\"",
             "match": {
-              "location": "loginstepdefs.i_shall_be_able_to_login_successfully()"
+              "arguments": [
+                {
+                  "val": "\"shahrukh@khan.com\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"omshanti\"",
+                  "offset": 36
+                }
+              ],
+              "location": "TestMeApp.user_enters_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Message Login successfully",
+            "match": {
+              "location": "TestMeApp.message_Login_successfully()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Successfull login with valid credentials",
+        "description": "",
+        "id": "login-action;successfull-login-with-valid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12779760600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Navigate to home page",
+            "match": {
+              "location": "TestMeApp.navigate_to_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters \"anild@gmail.com\" and \"anilanil\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"anild@gmail.com\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"anilanil\"",
+                  "offset": 34
+                }
+              ],
+              "location": "TestMeApp.user_enters_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Message Login successfully",
+            "match": {
+              "location": "TestMeApp.message_Login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
           }
         ]
       }
     ],
-    "name": "login to demowebshop",
-    "description": "  login to demo web shop",
-    "id": "login-to-demowebshop",
+    "name": "Login Action",
+    "description": "  Test Login Functionality",
+    "id": "login-action",
     "keyword": "Feature",
-    "uri": "C:/JENKINS/cucjenkins23/cucjenkins23/features/logintest.feature",
-    "tags": []
+    "uri": "C:/JENKINS/cucjenkins23/cucjenkins23/features/testmeapp.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
